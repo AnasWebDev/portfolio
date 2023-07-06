@@ -13,9 +13,9 @@ body {
 }
 
 /* header start here */
-@media (max-width: 410px) {
+@media (max-width: 468px) {
   .header {
-    background: transparent;
+    background: transparent !important;
   }
 }
 
@@ -38,10 +38,10 @@ body {
 }
 
 .navbar a {
-  font-size: 18px;
+  font-size: 20px;
   color: #ededed;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 30px;
 }
 
@@ -116,7 +116,7 @@ main {
 }
 
 .home-image img {
-  clip-path: circle();
+  clip-path: circle(115% at center top);
   max-width: 380px;
   max-height: 380px;
   opacity: 0.6;
@@ -149,7 +149,7 @@ span {
   font-size: 22px;
 }
 
-@media (max-width: 790px) {
+@media (min-width: 464px) and (max-width: 790px) {
   .home-content h1 {
     font-size: 40px;
     font-weight: 600;
@@ -167,6 +167,45 @@ span {
 
   span {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 464px) {
+  .home-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .home-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 1.2rem;
+  }
+  .main-container h2{
+    font-size: 1.3rem !important;
+  }
+  .main-container p{
+    font-size: 1rem ;
+    padding: 10px !important;
+  }
+  #project p{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+  }
+  #experience p{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+  }
+  #skills p .col{
+    font-size: 6rem !important;
   }
 }
 
@@ -291,9 +330,17 @@ span {
   height: 40vh;
 }
 
-.col p {
+p {
   font-size: 18px;
-  padding: 15px;
+  padding: 0px ;
+  margin: 0 ;
+  text-align: center;
+}
+
+.name p {
+  font-size: 10px;
+  padding: 0 ;
+  margin: 0 ;
   text-align: center;
 }
 
@@ -309,7 +356,7 @@ span {
 #about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
@@ -322,12 +369,12 @@ span {
 }
 
 #about > *:nth-child(1) {
-  flex: 1 1 60%;
+  flex: 0 1 60%;
   min-width: 25ch;
 }
 
 #about > *:nth-child(2) {
-  flex: 1 1 40%;
+  flex: 0 1 38%;
   min-width: 15ch;
 }
 /* About Section */
@@ -377,9 +424,21 @@ span {
 #project {
   height: 1000px;
   display: flex;
-  color: #081b29;
+  color: #ffffff;
   gap: 3%;
   border-radius: 20px;
+}
+
+#project p {
+width: 100%;
+background: #000000a9;
+border-radius: 20px;
+
+}
+#project h3 {
+width: 100%;
+background: #000000a9;
+border-radius: 20px;
 }
 
 #project p {
@@ -390,6 +449,7 @@ span {
 #project > * {
   display: flex;
   flex-basis: 100%;
+  align-items: end;
 }
 
 #project .pro1 {
@@ -398,19 +458,10 @@ span {
   border: 2.5px solid #ffffff;
   border-radius: 20px;
 }
+
 #project .pro2 {
-  background: #00acf0;
-  border: 2.5px solid #ffffff;
-  border-radius: 20px;
-}
-#project .pro3 {
   background: url("../img/portfolio.jpg") no-repeat center;
   background-size: contain;
-  border: 2.5px solid #ffffff;
-  border-radius: 20px;
-}
-#project .pro4 {
-  background: #00acf0;
   border: 2.5px solid #ffffff;
   border-radius: 20px;
 }
@@ -469,6 +520,7 @@ span {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.1;
+  padding: 1rem;
 }
 
 @media (max-width: 840px) {
@@ -486,13 +538,21 @@ span {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 10%;
 }
 #skills .col {
-  height: 5%;
+  height: 3%;
+  width: 5%;
 }
 #skills p {
   font-size: 6rem;
 }
+
+.name{
+font-size: 25px !important;
+font-weight: 700;
+}
+
 .html p {
   color: rgb(255, 94, 0);
 }
@@ -507,6 +567,12 @@ span {
 }
 .javascript p {
   color: yellow;
+}
+
+@media (max-width: 750px) {
+  #skills{
+    flex-direction: column;
+  }
 }
 /* skills section */
 
