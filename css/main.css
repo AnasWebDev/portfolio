@@ -119,7 +119,7 @@ main {
   clip-path: circle(115% at center top);
   max-width: 380px;
   max-height: 380px;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .home-content {
@@ -286,6 +286,7 @@ span {
   z-index: 1;
   overflow: hidden;
 }
+
 .body-icon a:hover {
   color: #081b29;
 }
@@ -369,12 +370,12 @@ p {
 }
 
 #about > *:nth-child(1) {
-  flex: 0 1 60%;
+  flex: 1 1 60%;
   min-width: 25ch;
 }
 
 #about > *:nth-child(2) {
-  flex: 0 1 38%;
+  flex: 1 1 40%;
   min-width: 15ch;
 }
 /* About Section */
